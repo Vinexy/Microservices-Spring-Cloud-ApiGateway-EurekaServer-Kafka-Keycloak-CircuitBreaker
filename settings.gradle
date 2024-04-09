@@ -1,0 +1,12 @@
+rootProject.name = 'microservice-new'
+include 'product-service:product-service'
+findProject(':product-service:product-service')?.name = 'product-service'
+include 'order-service:order-service'
+findProject(':order-service:order-service')?.name = 'order-service'
+include 'inventory-service'
+include 'product-service'
+include 'order-service'
+include 'discovery-server'
+include 'api-gateway'
+include('notification-service')
+include 'notification-service'
